@@ -1,0 +1,116 @@
+/* === Reset CSS dasar === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigasi */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #34495e;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #1abc9c;
+    border-radius: 5px;
+}
+
+/* Layout utama */
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Main konten */
+main {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Sidebar */
+aside {
+    flex: 1;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Profil */
+.profil {
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+/* Tabel Jadwal */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+ 
+table th {
+    background: #2c3e50;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
